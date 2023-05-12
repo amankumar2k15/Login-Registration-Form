@@ -1,0 +1,116 @@
+{
+  "user": [
+    {
+      "name": "aman",
+      "email": "aman@123s.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 1
+    },
+    {
+      "name": "aman",
+      "email": "aman@123.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 2
+    },
+    {
+      "name": "aman.kumar",
+      "email": "aman@2.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 3
+    },
+    {
+      "name": "aman",
+      "email": "aman@3.comm",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 4
+    },
+    {
+      "name": "afds",
+      "email": "afd@gamil.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 5
+    },
+    {
+      "name": "aman",
+      "email": "aman@2k14.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 6
+    },
+    {
+      "name": "aman",
+      "email": "aman@12.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 7
+    },
+    {
+      "name": "aman",
+      "email": "aman@123.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 8
+    },
+    {
+      "name": "aman",
+      "email": "smsn@13.com",
+      "password": "aMAN@123",
+      "repeatPassword": "aMAN@123",
+      "id": 9
+    },
+    {
+      "name": "aman",
+      "email": "smsn@gam.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 10
+    },
+    {
+      "name": "am",
+      "email": "aman@2f.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 11
+    },
+    {
+      "name": "aman",
+      "email": "aman@ff.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 12
+    },
+    {
+      "name": "aa",
+      "email": "aman@ffds.com",
+      "password": "aman@123A",
+      "repeatPassword": "aman@123A",
+      "id": 13
+    },
+    {
+      "name": "kumar",
+      "email": "aman@fs.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 14
+    },
+    {
+      "name": "aman",
+      "email": "aman@12.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 15
+    },
+    {
+      "name": "aman",
+      "email": "aman@gmai.com",
+      "password": "Aman@123",
+      "repeatPassword": "Aman@123",
+      "id": 16
+    }
+  ]
+}
