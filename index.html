@@ -1,126 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-  />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 
 </head>
+
 <body>
-    
-    <section class="vh-100 bg-image"
-  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
-  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-    <div class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
 
- <!--------------Registration Form----------------> 
+  <section class="vh-100 bg-image"
+    style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
 
- <div class="card" id="registration-form" style="border-radius: 15px; display: none;" >
-    <div class="card-body p-5">
-        <h2 class="text-uppercase text-center mb-5">Create an account</h2>
-        
-        <form>
-            
-            <div class="form-outline mb-4">
-                <input type="text" id="name" oninput="handleInput(event)" class="form-control form-control-lg" />
-                <label class="form-label" id="your_name" for="your_name">Your Name</label>
-            </div>
-            
-            <div class="form-outline mb-4">
-                <input type="email" id="email" oninput="handleInput(event)" class="form-control form-control-lg" />
-                <label class="form-label" id="your_email" for="email">Your Email</label>
-            </div>
-            
-            <div class="form-outline mb-4">
-                <input type="password" id="password"  oninput="handleInput(event)" class="form-control form-control-lg" />
-                <label class="form-label" id="your_password" for="password">Password</label>
-            </div>
-            
-            <div class="form-outline mb-4">
-                <input type="password"  id="repeatPassword" oninput="handleInput(event)" class="form-control form-control-lg" />
-                <label class="form-label"  id="your_repeat_password" for="repeatPassword">Repeat your password</label>
-            </div>
-            
-            <div class="form-check d-flex justify-content-center mb-5">
-                <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" />
-                <label class="form-check-label" for="checkbox">
-                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-                </label>
-                </div>
+            <!--------------Registration Form---------------->
 
-                <div class="d-flex justify-content-center">
+            <div class="card" id="registration-form" style="border-radius: 15px; display: none;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                <form>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name" oninput="handleInput(event)" class="form-control form-control-lg" />
+                    <label class="form-label" id="your_name" for="your_name">Your Name</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" oninput="handleInput(event)" class="form-control form-control-lg" />
+                    <label class="form-label" id="your_email" for="email">Your Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" oninput="handleInput(event)"
+                      class="form-control form-control-lg" />
+                    <label class="form-label" id="your_password" for="password">Password</label>
+                  </div>
+                  <div id="pass_info" style="color: red; margin-top: 4px;"></div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="repeatPassword" oninput="handleInput(event)"
+                      class="form-control form-control-lg" />
+                    <label class="form-label" id="your_repeat_password" for="repeatPassword">Repeat your
+                      password</label>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" />
+                    <label class="form-check-label" for="checkbox">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
                     <button type="button" id="register"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="handleSubmit()">Register</button>
-                </div>
-                <br>
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
-                    class="fw-bold text-body"  onclick="loginUp()" ><u>Login here</u></a></p>
-                    
+                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      onclick="handleSubmit()">Register</button>
+                  </div>
+                  <br>
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                      class="fw-bold text-body" onclick="loginUp()"><u>Login here</u></a></p>
+
                 </form>
-                
-                
-                
+
+
+
+              </div>
             </div>
-        </div>
-        
-        <!--------------Login Form----------------> 
 
-        <div class="card" id ="login-form" style="border-radius: 15px;">
-            <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Login</h2>
+            <!--------------Login Form---------------->
 
-              <form>
-                <div class="form-outline mb-4">
-                  <input type="email" id="login_email" oninput="handle_Login(event)" class="form-control form-control-lg" />
-                  <label class="form-label" id="your-login_email" for="email">Your Email</label>
-                </div>
+            <div class="card" id="login-form" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Login</h2>
 
-                <div class="form-outline mb-4">
-                  <input type="password" id="login_password"  oninput="handle_Login(event)" class="form-control form-control-lg" />
-                  <label class="form-label" id="your_login_password" for="login_password">Password</label>
-                </div>
+                <form>
+                  <div class="form-outline mb-4">
+                    <input type="email" id="login_email" oninput="handle_Login(event)"
+                      class="form-control form-control-lg" />
+                    <label class="form-label" id="your-login_email" for="email">Your Email</label>
+                  </div>
 
-                <br>
-                <div class="d-flex justify-content-center">
-                  <button type="button"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="getSubmitData()">Login</button>
-                </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="login_password" oninput="handle_Login(event)"
+                      class="form-control form-control-lg" />
+                    <label class="form-label" id="your_login_password" for="login_password">Password</label>
+                  </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Don't have account? <a href="#!"
-                    class="fw-bold text-body" id="login-show" onclick="signUp()"><u>Sign up</u></a></p>
+                  <br>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      onclick="getSubmitData()">Login</button>
+                  </div>
 
-              </form>
-              
+                  <p class="text-center text-muted mt-5 mb-0">Don't have account? <a href="#!" class="fw-bold text-body"
+                      id="login-show" onclick="signUp()"><u>Sign up</u></a></p>
+
+                </form>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -45,20 +45,24 @@ const handleInput = (eve) => {
         case "password":
             let passwordText = document.getElementById("pass_info");
 
-            if (value.length > 1) {
+            if (value.length > 2) {
                 passwordText.innerHTML = ""
                 let passwordVal = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@]).{8,}/
-                if (value.length === 0 && value.match(passwordVal)) {
+                if (value.match(passwordVal) || value.length === 0) {
                     document.getElementById('your_password').style.color = "rgba(0, 0, 0, 0.6)"
                     initialObj.password = value;
-                } else {
+                } else if (value.length > 1 && value.length < 7) {
                     document.getElementById('your_password').style.color = "red"
                     initialObj.password = "";
                 }
-            } else {
+            } else if (value.length === 1) {
                 document.getElementById('your_password').style.color = "rgba(0, 0, 0, 0.6)"
                 passwordText.innerHTML = "Password must contain atleast 8 characters, one digit, one uppercase, one lowercase and @ symbol."
             }
+            else if (value.length === 0) {
+                passwordText.innerHTML = ""
+            }
+
             break;
 
         case "repeatPassword":
